@@ -6,9 +6,9 @@ SceneSetup.act1();
 
 (...300)
 
-n: AND THIS IS THE HUMAN'S ANXIETY
+n: AND THIS IS THE REPRESENTATION OF THE KID'S STRESS
 
-n: _YOU_ ARE THE ANXIETY
+n: _YOU_ ARE THE STRESS
 
 {{if window.localStorage.continueChapter=="replay"}}
 (#act1_replay)
@@ -186,17 +186,17 @@ bb({body:"squeeze"});
 
 `hong({mouth:"0_neutral", eyes:"0_annoyed"})`
 
-h: Oh good, my wolf's back. Faaaaantastic.
+h: Oh no , He is back. Greaaaat!!!
 
 `hong({eyes:"0_neutral"})`
 
-n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*
+n: As you can see, he is streessed, you job is to cheer hi m up.
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
-n: IN FACT, THAT SANDWICH IS PUTTING THEM IN *DANGER* RIGHT NOW
+n: IN FACT, He is wasting too much time, thats why his rank is decreased to 721, He should study more than 8 hours.
 
-n: QUICK, WARN THEM!
+n: QUICK, WARN HIM!
 
 ```
 sfx("squeak");
@@ -204,7 +204,7 @@ bb({body:"squeeze_talk"});
 hong({body:"0_squeeze"});
 ```
 
-b: Human! Listen, we're in danger! The danger is...
+b: Humann! Listen, we're in danger! The danger is...
 
 `bb({body:"squeeze"})`
 
