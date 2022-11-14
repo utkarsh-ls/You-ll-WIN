@@ -19,169 +19,6 @@ n: _YOU_ ARE THE STRESS
 {{/if}}
 
 
-
-# act1_replay
-
-`hong({mouth:"0_neutral", eyes:"0_neutral"})`
-
-h: Oh hey! We're back here again?
-
-`hong({eyes:"0_neutral"})`
-
-n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*
-
-`bb({eyes:"look", mouth:"small_lock"})`
-
-n: IN FACT, REPLAYING THIS GAME IS PUTTING THEM IN *DANGER* RIGHT NOW
-
-n: QUICK, WARN THEM!
-
-```
-sfx("squeak");
-bb({body:"squeeze_talk"});
-hong({body:"0_squeeze"});
-```
-
-b: Human! Listen, we're in danger! The player...
-
-[...is gonna torture us again!](#act1_replay_torture)
-
-[...won't find an alternate ending!](#act1_replay_alternate)
-
-[...will get ludonarrative dissonance!](#act1_replay_dissonance)
-
-# act1_replay_torture
-
-```
-window.HACK_REPLAY = JSON.parse(localStorage.act4);
-bb({body:"normal", mouth:"normal", eyes:"fear"});
-hong({body:"0_sammich"});
-```
-
-{{if window.HACK_REPLAY.act1_ending=="fight"}}
-b: They'll make us curl up into a ball and cry!
-{{/if}}
-
-{{if window.HACK_REPLAY.act1_ending=="flight"}}
-b: They'll make us kill your phone for giving you a panic attack!
-{{/if}}
-
-{{if window.HACK_REPLAY.a2_ending=="fight"}}
-b: They'll make us *NOT* punch the party host!
-{{/if}}
-
-{{if window.HACK_REPLAY.a2_ending=="flight"}}
-b: They'll make us punch the Sympathetic Anti-Villain party host!
-{{/if}}
-
-{{if window.HACK_REPLAY.a3_ending=="jump"}}
-h: Well at least we might not jump off the roof this ti--
-{{/if}}
-
-{{if window.HACK_REPLAY.a3_ending=="walkaway"}}
-b: THEY'LL MAKE US JUMP OFF THE ROOF.
-{{/if}}
-
-`bb({body:"fear"});`
-
-b: ALL THESE NEW TERRIBLE THINGS WILL HAPPEN TO US, AND THEN WE'LL--
-
-(#act1_replay_end)
-
-
-#act1_replay_alternate
-
-```
-bb({body:"normal", mouth:"normal", eyes:"fear"});
-hong({body:"0_sammich"});
-```
-
-h: Sure, the story as a *whole* is the same, but each chapter has two possible endings, plus all the branching dialogue opti--
-
-`bb({body:"fear"});`
-
-b: The player will be disappointed, close this browser tab, delete our software, and then we'll--
-
-(#act1_replay_end)
-
-
-# act1_replay_dissonance
-
-```
-bb({body:"normal", mouth:"normal", eyes:"fear"});
-hong({body:"0_sammich"});
-```
-
-h: A lewd-what now?
-
-`bb({eyes:"normal"});`
-
-b: The story arc was about how you can *CHOOSE* to build a healthy collaboration with your fear,
-
-`bb({eyes:"normal_right"});`
-
-b: But replaying the game will give the same story, implying your *CHOICES* don't matter,
-
-`bb({eyes:"narrow_eyebrow"});`
-
-b: Thus showing a contradiction between the game's message and mechanics,
-
-`bb({eyes:"fear"});`
-
-b: Thus unraveling the fabric of this narrative universe,
-
-`bb({body:"fear"});`
-
-b: And then we'll--
-
-(#act1_replay_end)
-
-
-# act1_replay_end
-
-`bb({body:"panic"})`
-
-b: DIEEEEEEEEEEEEEEEEEEE
-
-```
-bb({body:"normal", mouth:"normal", eyes:"normal"});
-Game.clearText();
-```
-
-(...1001)
-
-```
-bb({body:"laugh"});
-hong({body:"laugh"});
-Game.clearText();
-sfx("laugh");
-```
-
-(...5001)
-
-```
-bb({body:"normal", mouth:"normal", eyes:"normal"});
-hong({body:"0_sammich"});
-```
-
-h: Okay let's get back into character.
-
-```
-Game.clearText();
-```
-
-n4: (LET _YOUR_ ANXIETY BLAH BLAH BLAH MOST SIMILAR TO WHAT _YOUR_ FEAR BLAH BLAH YOU KNOW THE DRILL)
-
-```
-sfx("squeak");
-hong({body:"0_squeeze"});
-bb({body:"squeeze"});
-```
-
-(#act1_normal_choice)
-
-
-
 # act1_normal
 
 `hong({mouth:"0_neutral", eyes:"0_annoyed"})`
@@ -190,7 +27,7 @@ h: Oh no , He is back. Greaaaat!!!
 
 `hong({eyes:"0_neutral"})`
 
-n: As you can see, he is streessed, you job is to cheer hi m up.
+n: As you can see, he is streessed, you job is to cheer him up.
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
@@ -204,21 +41,23 @@ bb({body:"squeeze_talk"});
 hong({body:"0_squeeze"});
 ```
 
-b: Humann! Listen, we're in danger! The danger is...
+b: Hey, Kid! Listen, we're in danger! The danger is...
 
 `bb({body:"squeeze"})`
 
-n4: (LET _YOUR_ ANXIETY COME OUT TO PLAY! PICK WHAT'S MOST SIMILAR TO WHAT _YOUR_ FEAR TELLS YOU)
+n4: (LET _YOUR_ STRESS COME OUT TO PLAY! PICK WHAT'S MOST SIMILAR TO WHAT _YOUR_ FEARS TELL YOU)
 
 (#act1_normal_choice)
 
 # act1_normal_choice
 
-[We're eating alone for lunch! Again!](#act1a_alone) `bb({body:"squeeze_talk"})`
+[We're studying less than 14 hours! Again!](#act1a_alone) `bb({body:"squeeze_talk"})`
 
-[We're not productive while eating!](#act1a_productive) `bb({body:"squeeze_talk"})`
+[We're sleeping more than 4 hours!](#act1a_productive) `bb({body:"squeeze_talk"})`
 
-[That white bread's bad for us!](#act1a_bread) `bb({body:"squeeze_talk"})`
+[You'r waste to much time with your friends!](#act1a_bread) `bb({body:"squeeze_talk"})`
+
+[]() ``
 
 # act1a_alone
 
@@ -227,7 +66,7 @@ bb({body:"normal", mouth:"small", eyes:"narrow"});
 hong({body:"0_sammich"});
 ```
 
-b: Don't you know loneliness is associated with premature death as much as smoking 15 cigarettes a day?-
+b: Sir was saying that an average JEE student need to study, more than 14-16 hrs a day with full concentration ?-
 
 `Game.OVERRIDE_TEXT_SPEED = 2;`
 
@@ -237,17 +76,17 @@ b: (Holt-Lunstad 2010, PLoS Medicine)
 
 `hong({eyes:"0_annoyed"})`
 
-h: Um, thanks for citing your sources but--
+h: Um, thanks for reminding that but--
 
 `Game.OVERRIDE_TEXT_SPEED = 2;`
 
 `bb({body:"fear", mouth:"normal", eyes:"fear"})`
 
-b: Which means if we don't hang out with someone *right now* we're gonna-
+b: Which means if we don't start studying 14-16 hrs daily we will end up as a failure in life-
 
 `bb({body:"panic"})`
 
-b: DIEEEEEEEEEEEEEEEEEEE
+b: Fu******ck!!
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"normal"});
@@ -260,7 +99,7 @@ publish("hp_show");
 
 `_.fifteencigs = true`
 
-n: YOU USED *FEAR OF BEING UNLOVED*
+n: YOU USED *FEAR OF BEING A FAILURE*
 
 (#act1b)
 
