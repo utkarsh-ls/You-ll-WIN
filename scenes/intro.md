@@ -110,7 +110,7 @@ n3: Now, let's begin our story...
 
 `publish("intro-to-game-2")`
 
-n2: THIS IS A HUMAN
+n2: THIS IS A KID STUDYING FOR JEE.
 
 (...600)
 

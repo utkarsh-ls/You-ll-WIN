@@ -55,7 +55,7 @@ n4: (LET _YOUR_ STRESS COME OUT TO PLAY! PICK WHAT'S MOST SIMILAR TO WHAT _YOUR_
 
 [We're sleeping more than 4 hours!](#act1a_productive) `bb({body:"squeeze_talk"})`
 
-[You'r waste to much time with your friends!](#act1a_bread) `bb({body:"squeeze_talk"})`
+[You're wasting too much time with your friends!](#act1a_bread) `bb({body:"squeeze_talk"})`
 
 []() ``
 
@@ -97,7 +97,7 @@ publish("hp_show");
 
 (...2500)
 
-`_.fifteencigs = true`
+`_.twentyhours = true`
 
 n: YOU USED *FEAR OF BEING A FAILURE*
 
@@ -110,20 +110,20 @@ bb({body:"normal", mouth:"small", eyes:"normal"});
 hong({body:"0_sammich"});
 ```
 
-b: Whip out your laptop and do some work right now!
+b: make a habit of studying atleast till 2 in the morning!
 
 `hong({eyes:"0_annoyed"})`
 
-h: Um, I'd rather not get crumbs in my keyboa--
+h: Um, I'd rather not stay up that late in the nigh--
 
 ```
 bb({mouth:"normal", eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: If we're not contributing to the body of society then we're a society-parasite!
+b: If we don't sleep less than 4 hours, we will end up becoming a burden on our parents!
 
-b: The society-body will go to the society-doctor for medication to kill their society-parasites then we'll--
+b: Our parents will be disappointed in us, and everyone will think we are lazy and useless. Then everyone will hate us, and we'll--
 
 ```
 bb({body:"panic", mouth:"normal", eyes:"fear"});
@@ -143,7 +143,7 @@ publish("hp_show");
 
 `_.parasite = true`
 
-n: YOU USED *FEAR OF BEING A BAD PERSON*
+n: YOU USED *FEAR OF DISAPPOINTING PARENTS*
 
 (#act1b)
 
@@ -154,14 +154,16 @@ bb({body:"normal", mouth:"normal", eyes:"fear"});
 hong({body:"0_sammich", eyes:"0_annoyed"});
 ```
 
-h: Have those studies been replicat--
+h: Humans are social beings, hence spending some quality time with friends is necessary for mental health--
 
 ```
 bb({body:"fear", mouth:"normal", eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Processed wheat will spike our blood sugar so they'll have to amputate all our limbs and then we'll-
+b: Neither mental health, nor your friends will help you in cracking JEE!
+
+b: All our friends care about, is wasting our time. They don't care about our future, they don't care about our parents, they don't care about us--
 
 `bb({body:"panic"})`
 
@@ -178,7 +180,7 @@ publish("hp_show");
 
 `_.whitebread = true`
 
-n: YOU USED *FEAR OF BEING HARMED*
+n: YOU USED *FEAR OF BEING SOCIAL*
 
 (#act1b)
 
@@ -188,7 +190,7 @@ n: IT'S SUPER EFFECTIVE
 
 `bb({mouth:"smile", eyes:"smile"});`
 
-b: See, human? I am your loyal guard-wolf!
+b: See, kid? I am your loyal guard-dog!
 
 `bb({body:"pride_talk"});`
 
@@ -196,15 +198,15 @@ b: Trust your gut! Your feelings are always valid!
 
 `bb({body:"pride"});`
 
-n: GET YOUR HUMAN'S ENERGY BAR TO ZERO
+n: GET THE KID'S ENERGY BAR TO ZERO
 
 n: TO PROTECT THEIR PHYSICAL + SOCIAL + MORAL NEEDS, YOU CAN USE:
 
-n: FEAR OF *BEING HARMED* #harm#
+n: FEAR OF *BEING SOCIAL* #harm#
 
-n: FEAR OF *BEING UNLOVED* #alone#
+n: FEAR OF *BEING A FAILURE* #alone#
 
-n: AND FEAR OF *BEING A BAD PERSON* #bad#
+n: AND FEAR OF *DISAPPOINTING PARENTS* #bad#
 
 `Game.OVERRIDE_TEXT_SPEED = 1.25;`
 
@@ -251,11 +253,11 @@ n: ROUND ONE: *FIGHT!*
 
 `bb({body:"normal", mouth:"normal", eyes:"normal"});`
 
-h: Huh. Facebook feed says there's a party happening this weekend.
+h: Huh. Akrish messaged me about the group study happening this weekend.
 
 `bb({eyes:"uncertain"});`
 
-b: Doesn't that weirdo throw a party *every* weekend?
+b: Doesn't that weirdo hosts a group study almost every weekend?
 
 `bb({eyes:"uncertain_right"});`
 
@@ -263,37 +265,41 @@ b: What inner void are they trying to fill? They must be deeply messed up inside
 
 `hong({eyes:"surprise"});`
 
-h: Also, I got an invite?
+h: Also, He asked me to join?
 
 `bb({eyes:"fear", mouth:"normal"});`
 
 b: Well then!
 
-[Say yes, or we'll die from loneliness!](#act1c_loner)
+[Say yes, or we'll fail since we don't know anything!](#act1c_loner)
 
-[Say no, it's full of poisonous drugs!](#act1c_drugs)
+[Say no, they are idiots!](#act1c_drugs)
 
-[Ignore it, we just make parties sad.](#act1c_sad)
+[Ignore it, no one wants to study with us.](#act1c_sad)
 
 # act1c_loner
 
-{{if _.fifteencigs}}
-b: Fifteen cigarettes a day, human! Fifteen!
+{{if _.twentyhours}}
+b: Everyone else is studying for at least 18-20 hours! TWENTY! HOURS! PER! DAY!
 {{/if}}
 
-{{if !_.fifteencigs}}
+{{if !_.twentyhours}}
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 {{/if}}
 
-{{if !_.fifteencigs}}
-b: Then no one will show up at our funeral, they'll dump our ashes into the ocean, we get eaten by a whale,
+{{if !_.twentyhours}}
+b: We waste too much time sleeping and socializing! We need to study more!
 {{/if}}
 
-{{if !_.fifteencigs}}
-b: and we become WHALE POOP!
+{{if !_.twentyhours}}
+b: If we don't study enough, we will fail in JEE, and end up at some garbage college. Then no one will want to be near us, and we'll end up alone and miserable!
 {{/if}}
 
-{{if !_.fifteencigs}} `_.whalepoop = true` {{/if}}
+{{if !_.twentyhours}}
+b: and we will become HUMAN GARBAGE!
+{{/if}}
+
+{{if !_.twentyhours}} `_.humangarbage = true` {{/if}}
 
 (...500)
 
@@ -306,16 +312,16 @@ attack("18p", "alone");
 
 `bb({eyes:"normal"});`
 
-{{if !_.fifteencigs}}
-b: So yeah we should go to that party!
+{{if !_.twentyhours}}
+b: So yeah we should go to that group study!
 {{/if}}
 
 {{if _.parasite}}
-b: Just bring the laptop so we can do work, and not be a society-parasite.
+b: Just bring your own notes, so we can do our own work, and not be distracted by those people.
 {{/if}}
 
 {{if _.whitebread}}
-b: Just as long as they don't serve WHITE BREAD
+b: Just make sure we only study and not waste our time talking and listening to others.
 {{/if}}
 
 `hong({mouth:"anger", eyes:"anger"});`
@@ -324,8 +330,8 @@ h: GOD. If it'll make you shut up, fine.
 
 h: I'll say yes.
 
-{{if _.whalepoop}}
-b: Whale poop, human! Whale poop!
+{{if _.humangarbage}}
+b: Human garbage, human! Human garbage!
 {{/if}}
 
 `_.partyinvite="yes"`
@@ -337,7 +343,7 @@ b: Whale poop, human! Whale poop!
 `bb({mouth:"small", eyes:"fear"});`
 
 {{if _.whitebread}}
-b: or even worse... WHITE BREAD
+b: or even worse... they will use us and will get ahead of us!
 {{/if}}
 
 {{if _.whitebread}}
@@ -345,11 +351,11 @@ b: or even worse... WHITE BREAD
 {{/if}}
 
 {{if _.whitebread}}
-b: We'll overdose on so much meth and white bread they won't be able to fit our fat corpse into the cremation furnace!
+b: We'll waste so much time there, that later we will not even have time to eat but study and will end up as a failure!
 {{/if}}
 
 {{if !_.whitebread}}
-b: We'll overdose on so many drugs the undertaker will wonder how our body was *already* pre-embalmed!
+b: We'll waste so much time that, we'll not have enough time to do our revision and will end up on streets!
 {{/if}}
 
 ```
@@ -360,7 +366,7 @@ attack("18p", "harm");
 (...2500)
 
 {{if _.parasite}}
-b: Besides, can't party, we need to do work or we're a terrible society-parasite!
+b: Besides, can't do group study, we need to do study by ourselves or we'll fail JEE, and become a burden on our parents!
 {{/if}}
 
 `hong({mouth:"anger", eyes:"anger"});`
@@ -379,16 +385,16 @@ h: I'll say no.
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-{{if _.fifteencigs}}
-b: All we ever do is cry in a corner about how loneliness is as deadly as 15 cigarettes a day.
+{{if _.twentyhours}}
+b: We only study for 12 hours, while everyone else is studying for 18-20 hours per day.
 {{/if}}
 
 {{if _.parasite}}
-b: All we ever do at parties is worry about how we should be productive instead.
+b: All we ever do at group studies is worry about how we should have spent more time studying for the topic and less time sleeping.
 {{/if}}
 
 {{if _.whitebread}}
-b: All we ever do is worry about how the unhealthy food options are going to kill us.
+b: All we ever do is worry about how the people at group studies are laughing and enjoying themselves instead of studying seriously.
 {{/if}}
 
 ```
@@ -396,23 +402,23 @@ bb({mouth:"normal", eyes:"normal"});
 hong({mouth:"neutral", eyes:"lookaway"});
 ```
 
-h: gee i wonder why.
+h: wow! thanks for the compliment.
 
 `hong({eyes:"neutral"});`
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-b: So if we go we'll make them feel bad, but if we reject their invite we'll also make them feel bad!
+b: So if we go we'll make them feel bad about us, but if we reject their invite we'll also feel bad!
 
 `bb({body:"fear", eyes:"fear"});`
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-b: ALL WE DO IS MAKE PEOPLE FEEL BAD, SO WE SHOULD FEEL BAD
+b: ALL WE DO IS MAKE PEOPLE FEEL BAD, SO WE SHOULD FEEL BAD.
 
 ```
 hong({mouth:"shock", eyes:"shock"});
-attack("18p", "bad");
+attack("18p", "bad");go we'll make them feel bad
 ```
 
 (...2500)
@@ -434,17 +440,17 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 hong({mouth:"neutral", eyes:"annoyed"});
 ```
 
-h: Anyway. Facebook's too much. I need something calmer, less anxiety-producing.
+h: Anyway. Study is making me too anxious. I need something to calm me.
 
 `hong({eyes:"neutral"});`
 
-h: What's new on Twitter?
+h: What's new on Facebook?
 
 `bb({eyes:"look"});`
 
 [Oh no, look at that horrible news story!](#act1d_news)
 
-[Oh no, is that tweet secretly about *us?*](#act1d_subtweet)
+[Oh no, is that comment secretly about *us?*](#act1d_comment)
 
 [Hey, a GIF of a cat drinking milk](#act1d_milk)
 
@@ -474,7 +480,7 @@ b: ...
 
 `bb({mouth:"smile", eyes:"smile"});`
 
-b: Let's retweet that story!
+b: Let's like that story!
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -492,20 +498,20 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Okay I'll retweet it just please be quiet!
+h: Okay I'll like it just please be quiet!
 
 `hong({mouth:"neutral", eyes:"annoyed"});`
 
-h: Screw it, let's look at Snapchat.
+h: Screw it, let's look at Instagram.
 
 (#act1e)
 
 
-# act1d_subtweet
+# act1d_comment
 
 `bb({eyes:"fear"});`
 
-b: It's a subtweet! A sneaky, sneaky subtweet!
+b: It's a comment! A sneaky, sneaky comment!
 
 `hong({eyes:"annoyed"});`
 
@@ -551,14 +557,14 @@ attack("18p", "alone");
 
 (...2500)
 
-`_.subtweet=true`
+`_.comment=true`
 
 ```
 hong({mouth:"anger", eyes:"annoyed"});
 bb({body:"normal", mouth:"normal", eyes:"normal"});
 ```
 
-h: o-KAY, gonna try Snapchat.
+h: o-KAY, gonna try Instagram.
 
 (#act1e)
 
@@ -566,7 +572,7 @@ h: o-KAY, gonna try Snapchat.
 
 `hong({mouth:"smile", eyes:"neutral"});`
 
-h: Heh ya that's cute, just retweeted it, I thi--
+h: Heh ya that's cute, just reposted it, I thi--
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -591,7 +597,7 @@ hong({mouth:"anger", eyes:"annoyed"});
 bb({body:"normal", mouth:"normal", eyes:"normal"});
 ```
 
-h: o-KAY, gonna try Snapchat.
+h: o-KAY, gonna try Instagram.
 
 (#act1e)
 
@@ -599,7 +605,7 @@ h: o-KAY, gonna try Snapchat.
 
 `hong({mouth:"neutral", eyes:"neutral"});`
 
-h: Huh, photos from yesterday night. So *that's* what those weekly parties are like.
+h: Huh, photos from yesterday night. So *that's* what those weekly group studies are like.
 
 {{if _.partyinvite=="yes"}} (#act1e_said_yes) {{/if}}
 
@@ -624,15 +630,15 @@ bb({mouth:"normal", eyes:"normal"});
 
 [Change our answer! It's too crowded!](#act1e_yes_changetono)
 
-{{if _.subtweet}}
-[Yeah they were totally subtweeting us.](#act1e_ignore_subtweet)
+{{if _.comment}}
+[Yeah they were totally commenting about us.](#act1e_ignore_comment)
 {{/if}}
 
 {{if _.badnews}}
-[Wait we retweeted without fact-checking.](#act1e_ignore_factcheck)
+[Wait we liked without fact-checking.](#act1e_ignore_factcheck)
 {{/if}}
 
-{{if (!_.subtweet && !_.badnews)}}
+{{if (!_.comment && !_.badnews)}}
 [You know, you've got really bad posture?](#act1e_ignore_posture)
 {{/if}}
 
@@ -643,14 +649,14 @@ bb({eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: They were counting on us to come and now we're betraying their trust? Do you wanna die alone?!
+b: We are supposed to study more, like the people at group study. We can't say no, if we do, we wont' be able to study enough. Do you want to fail JEE!?
 
-{{if _.fifteencigs}}
-b: FIFTEEN. CIGARETTES.
+{{if _.twentyhours}}
+b: STUDY! 20! HOURS! PER! DAY!
 {{/if}}
 
-{{if _.whalepoop}}
-b: WHALE. POOP.
+{{if _.humangarbage}}
+b: HUMAN. GARBAGE.
 {{/if}}
 
 ```
@@ -667,7 +673,7 @@ Game.OVERRIDE_TEXT_SPEED = 1.5;
 
 h: Shut up shut up I'll keep it as yes!
 
-(#act1f)
+(#act1g)
 
 # act1e_yes_changetono
 
@@ -676,7 +682,7 @@ bb({eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Don't you know about human stampedes?
+b: Don't you know about how human producitivty decreases with more number of people?
 
 ```
 bb({body:"fear", mouth:"small", eyes:"narrow"});
@@ -684,7 +690,8 @@ hong({eyes:"sad", mouth:"sad"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: In 2003 a Rhode Island nightclub had a fire and the panic made people jam the exits so 100 people burned to death-
+b: In 2007 a Harvard study was conducted to measure productivity of a group of people. They found out that the productivity per person decreases by about 23% each time the number of people in the group increases by 2.
+
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"fear"});
@@ -717,13 +724,13 @@ Game.OVERRIDE_TEXT_SPEED = 1.5;
 
 h: Shut up shut up I'll change my answer to no! God!
 
-(#act1f)
+(#act1g)
 
 # act1e_said_no
 
 `hong({mouth:"sad", eyes:"sad"});`
 
-h: Hm... that looks really fun.
+h: Hm... that looks really useful, it seems to be productive.
 
 h: Maybe I shouldn't have said no to the invite?
 
@@ -731,17 +738,17 @@ h: Maybe I shouldn't have said no to the invite?
 
 [Change our answer? Like a jerk?!](#act1e_no_dontchange)
 
-[Change our answer! Don't die alone!](#act1e_no_changetoyes)
+[Change our answer! Don't die unproductive!](#act1e_no_changetoyes)
 
-{{if _.subtweet}}
-[Yeah they were totally subtweeting us.](#act1e_ignore_subtweet)
+{{if _.comment}}
+[Yeah they were totally commenting us.](#act1e_ignore_comment)
 {{/if}}
 
 {{if _.badnews}}
-[Wait we retweeted without fact-checking.](#act1e_ignore_factcheck)
+[Wait we liked it without fact-checking.](#act1e_ignore_factcheck)
 {{/if}}
 
-{{if (!_.subtweet && !_.badnews)}}
+{{if (!_.comment && !_.badnews)}}
 [You know, you've got really bad posture?](#act1e_ignore_posture)
 {{/if}}
 
@@ -751,7 +758,7 @@ h: Maybe I shouldn't have said no to the invite?
 
 b: Everybody was counting on us!
 
-b: ...to leave them alone and let them have a nice party without a horrible disgusting {{if _.whitebread}}white-bread-munching{{/if}} creep like u--
+b: ...to leave them alone and let them have a nice group study without a useless moron like u--
 
 
 ```
@@ -769,7 +776,7 @@ Game.OVERRIDE_TEXT_SPEED = 1.5;
 
 h: Shut up shut up I'll keep it as no!
 
-(#act1f)
+(#act1g)
 
 # act1e_no_changetoyes
 
@@ -778,7 +785,7 @@ bb({body:"fear", eyes:"fear", mouth:"normal"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Chronic loneliness increases our cortisol levels as well as risk for cardiovascular disease and stroke!
+b: Studies indicate that group studies help increase the productivity of everyone in the group by a factor of 18%.
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -787,8 +794,8 @@ attack("18p", "harm");
 
 (...2500)
 
-{{if _.fifteencigs}}
-b: FIFTEEN. CIGARETTES.
+{{if _.twentyhours}}
+b: STUDY! 20! HOURS! PER! DAY!
 {{/if}}
 
 ```
@@ -799,23 +806,24 @@ Game.OVERRIDE_TEXT_SPEED = 1.5;
 
 h: Shut up shut up I'll change my answer to yes! God!
 
-(#act1f)
+(#act1g)
 
-# act1e_ignore_subtweet
+# act1e_ignore_comment
 
 ```
 bb({eyes:"fear", mouth:"small"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: All our problematic tweets have come back to roost!
+b: People are finally starting to notice that we are not studying enough!
 
 ```
 bb({body:"fear", eyes:"fear", mouth:"normal"});
 Game.OVERRIDE_TEXT_SPEED = 1.7;
 ```
 
-b: We're gonna get called out and cancelled and dragged with a rope on horseback down the information superhighway!
+b: We are gonna be the laughing stock of the whole class! They are gonna make fun of us for the rest of our lives!
+
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -832,7 +840,7 @@ Game.OVERRIDE_TEXT_SPEED = 1.5;
 
 h: Why are you like this?!
 
-(#act1f)
+(#act1g)
 
 # act1e_ignore_factcheck
 
@@ -841,14 +849,14 @@ bb({eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: We're spreading disinformation! We're destroying trust in a free press!
+b: We're spreading disinformation! Now everyone from Kota will fail in JEE, instead of just us!
 
 ```
 bb({body:"scream"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: We're the reason fascism will arise from the rubble of democracy!
+b: We're the reason Delhi will arise from the rubble of Kota, as the next hotspot for JEE coaching!
 
 ```
 bb({body:"normal", eyes:"anger"});
@@ -866,7 +874,7 @@ _.factcheck = true;
 
 h: Why are you like this?!
 
-(#act1f)
+(#act1g)
 
 # act1e_ignore_posture
 
@@ -899,19 +907,19 @@ Game.OVERRIDE_TEXT_SPEED = 1.5;
 
 h: Why are you like this?!
 
-(#act1f)
+(#act1g)
 
 # act1e_said_ignore
 
 `hong({mouth:"sad", eyes:"sad"});`
 
-h: Hm... that looks really fun.
+h: Hm... that looks really useful, it seems to be productive
 
 h: Maybe I shouldn't have ignored the invite?
 
 `bb({mouth:"normal", eyes:"normal"});`
 
-[Keep ignoring, we're still party poopers.](#act1e_ignore_continue)
+[Keep ignoring, we're still gonna make everyone feel bad.](#act1e_ignore_continue)
 
 [Actually, say yes.](#act1e_ignore_changetoyes)
 
@@ -938,15 +946,15 @@ attack("18p", "alone");
 
 b: so let's just call it even.
 
-(#act1f)
+(#act1g)
 
 # act1e_ignore_changetoyes
 
 `hong({eyes:"surprise", mouth:"smile"});`
 
-h: You're... letting me have fun?
+h: You're... letting me study with others? Even though I would be wasting their time?
 
-b: Well, I mean, loneliness *can* kill us.
+b: Well, I mean, group study does increase productivity..., at least for people like you who don't study upto 20 hours a day.
 
 `hong({eyes:"neutral", mouth:"neutral"});`
 
@@ -956,209 +964,9 @@ b: Well, I mean, loneliness *can* kill us.
 
 `bb({eyes:"narrow"});`
 
-b: It's too crowded. Crowds are dangerous.
+b: It's too crowded, and we know more number of people leads to less productivity.
 
 (#act1e_yes_changetono)
-
-
-# act1f
-
-```
-hong({mouth:"neutral", eyes:"neutral"});
-bb({body:"normal", mouth:"normal", eyes:"normal"});
-```
-
-h: Whatever. New Tinder notification.
-
-`bb({eyes:"uncertain"})`
-
-b: What, that hookup app?
-
-`hong({eyes:"annoyed"})`
-
-h: It's not a hookup app, it's just a way to meet new peopl--
-
-`bb({eyes:"narrow"})`
-
-b: It's a hookup app.
-
-```
-hong({eyes:"surprise", mouth:"smile"});
-bb({eyes:"normal"});
-```
-
-h: Oh, I got a match! They look cute!
-
-```
-bb({eyes:"narrow_eyebrow"});
-hong({eyes:"sad", mouth:"anger"})
-```
-
-h: Please don't ruin this for m--
-
-```
-bb({body:"panic"});
-Game.OVERRIDE_TEXT_SPEED = 2.0;
-```
-
-b: DANGER DANGER DANGER DANGER DANGER DANGER
-
-`bb({body:"fear", eyes:"fear", mouth:"normal"})`
-
-[We're being *used* by other people.](#act1f_used_by_others)
-
-[We're just *using* other people.](#act1f_using_others)
-
-[YOUR MATCH IS A SERIAL KILLER](#act1f_killer)
-
-# act1f_used_by_others
-
-`bb({body:"point_crotch", eyes:"normal", mouth:"normal"})`
-
-b: Random hookups may be able to fill the hole down there,
-
-b: but they can never fill the hole...
-
-`bb({body:"point_heart", eyes:"pretty", mouth:"small"})`
-
-b: in *here*.
-
-(...1000)
-
-```
-bb({body:"normal", mouth:"normal", eyes:"fear"});
-Game.OVERRIDE_TEXT_SPEED = 1.5;
-```
-
-b: The point is WE'RE GOING TO DIE ALONE
-
-```
-hong({mouth:"shock", eyes:"shock"});
-attack("18p", "alone");
-```
-
-(...2500)
-
-`_.hookuphole=true`
-
-(#act1g)
-
-# act1f_using_others
-
-`bb({eyes:"narrow", mouth:"small"})`
-
-b: You think other people's genitals are Pokémon for us to collect?
-
-```
-bb({body:"sing", eyes:"pretty", mouth:"shut"});
-music("pokemon");
-Game.clearText();
-Game.FORCE_CANT_SKIP = true;
-```
-
-```
-Game.FORCE_TEXT_DURATION = 1000;
-Game.FORCE_NO_VOICE = true;
-```
-
-b: ♫ (pokemon theme song)-
-
-(...5600)
-
-```
-bb({mouth:"normal"});
-Game.FORCE_TEXT_DURATION = 2400;
-```
-
-b: ♫ I wanna be, the ^slut^ti-est-
-
-(...500)
-
-```
-bb({eyes:"narrow", mouth:"small"});
-Game.FORCE_TEXT_DURATION = 2100;
-```
-
-b: ♫ Like no one ever was-
-
-(...1500)
-
-```
-bb({eyes:"pretty"});
-Game.FORCE_TEXT_DURATION = 2300;
-```
-
-b: ♫ Thighs n' ^ass^, voluptuous breast-
-
-(...500)
-
-```
-bb({eyes:"fear", mouth:"normal"});
-Game.FORCE_TEXT_DURATION = 2000;
-```
-
-b: ♫ with sweaty ^dick^ and balls!-
-
-(...1000)
-
-```
-bb({eyes:"smile", mouth:"smile"});
-Game.FORCE_TEXT_DURATION = 1000;
-```
-
-b: ♫ PERVY-MON! GOTTA CA-
-
-```
-Game.FORCE_CANT_SKIP = false;
-Game.clearText();
-music(false);
-bb({body:"normal", mouth:"normal", eyes:"normal"});
-Game.OVERRIDE_TEXT_SPEED = 1.5;
-```
-
-b: The point is we're a manipulative creep.
-
-```
-hong({mouth:"shock", eyes:"shock"});
-attack("18p", "bad");
-```
-
-(...2500)
-
-`_.pokemon=true`
-
-(#act1g)
-
-# act1f_killer
-
-`Game.OVERRIDE_TEXT_SPEED = 1.5;`
-
-{{if _.whitebread}}
-b: They'll trap you in a well and force-feed you white bread to fatten you up so they can wear your skin like a suit!
-{{/if}}
-
-{{if _.parasite}}
-b: They'll bludgeon you with a pomodoro timer and say "YOU SHOULDA BEEN MORE PRODUCTIVE YOU PARASITE"
-{{/if}}
-
-{{if !_.whitebread && !_.parasite}}
-b: They'll tear your flesh to gory confetti, turn your entrails into streamers, and mix your blood into a punch bowl!
-{{/if}}
-
-{{if !_.whitebread && !_.parasite}}
-b: How's THAT for a party invite?!
-{{/if}}
-
-```
-hong({mouth:"shock", eyes:"shock"});
-attack("18p", "harm");
-```
-
-(...2500)
-
-`_.serialkiller=true`
-
-(#act1g)
 
 # act1g
 
@@ -1180,15 +988,12 @@ h: i'm so sick of this game.
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
 h:
-{{if _.fifteencigs}}"loneliness will kill us"... {{/if}}
+{{if _.twentyhours}}"loneliness will kill us"... {{/if}}
 {{if _.parasite}}"we're a society-parasite"... {{/if}}
 {{if _.whitebread}}"don't eat that, it'll kill us"... {{/if}}
-{{if _.subtweet}}"they're talking behind our back"... {{/if}}
+{{if _.comment}}"they're talking behind our back"... {{/if}}
 {{if _.badnews}}"the world is burning"... {{/if}}
-{{if _.hookuphole}}"we'll die alone"... {{/if}}
-{{if _.serialkiller}}"they're a serial killer"... {{/if}}
 {{if _.catmilk}}"cats can't digest milk"... {{/if}}
-{{if _.pokemon}}a ^crappy^ parody song... {{/if}}
 
 h: i just want to live my life.
 
@@ -1196,7 +1001,7 @@ h: i just want to be free from all this... pain.
 
 `bb({eyes:"look_sad"});`
 
-b: Hey... human...
+b: Hey... kid...
 
 `Game.OVERRIDE_TEXT_SPEED = 0.5;`
 
@@ -1206,7 +1011,7 @@ b: It'll be okay.
 
 `bb({body:"point_heart", eyes:"look_sad_smile", mouth:"smile"});`
 
-b: As your loyal guard-wolf, I'll always keep an eye out for danger, and do my best to keep you safe.
+b: As your loyal guard-dog, I'll always keep an eye out for danger, and do my best to keep you safe.
 
 `bb({body:"normal", eyes:"look_sad", mouth:"smile"});`
 
@@ -1219,15 +1024,15 @@ bb({body:"normal", eyes:"normal", mouth:"normal"});
 hong({body:"phone1", eyes:"neutral", mouth:"neutral"});
 ```
 
-h: Last app. Instagram. What you got?
+h: Last app. Whatsapp. What you got?
 
 `hong({eyes:"sad"});`
 
-h: It's... more party pictures.
+h: It's... more group study related chats.
 
 `hong({mouth:"sad"});`
 
-h: Everyone looks so happy. Free from worry. Free from anxiety.
+h: Everyone sounds so excited. Free from worry. Free from anxiety.
 
 `hong({mouth:"anger"});`
 
@@ -1235,7 +1040,7 @@ h: God, why can't I be like them? Why can't I just be *normal?*
 
 `bb({eyes:"normal_right"});`
 
-b: Speaking of parties, about this weekend's invite. Here's my FINAL decision:
+b: Speaking of gruop studies, about this weekend's invite. Here's my FINAL decision:
 
 `bb({eyes:"normal"});`
 
@@ -1282,7 +1087,7 @@ b: wha?
 
 `hong({body:"phone1", eyes:"anger", mouth:"anger"});`
 
-h: I'm going to say YES to that party,
+h: I'm going to say YES to that group study,
 
 {{if _.act1g=="go"}}
 h: NOT because you want me to, but because *I* want to.
@@ -1342,11 +1147,11 @@ b: ..................
 
 `bb({mouth:"normal"});`
 
-[AHHHH WE'RE GONNA DIE](#act1h_death) `Game.OVERRIDE_CHOICE_LINE = true;`
+[AHHHH WE'RE GONNA WASTE ALL OUR TIME WITH FRIENDS, AND BECOME A FAILURE](#act1h_death) `Game.OVERRIDE_CHOICE_LINE = true;`
 
-[AHHHH EVERYONE HATES US](#act1h_loneliness) `Game.OVERRIDE_CHOICE_LINE = true;`
+[AHHHH WE'RE GONNA FAIL JEE](#act1h_loneliness) `Game.OVERRIDE_CHOICE_LINE = true;`
 
-[AHHHH WE'RE HORRIBLE PEOPLE](#act1h_worthless) `Game.OVERRIDE_CHOICE_LINE = true;`
+[AHHHH WE'RE HORRIBLE AND WORTHLESS TO OUR PARENTS](#act1h_worthless) `Game.OVERRIDE_CHOICE_LINE = true;`
 
 # act1h_death
 
@@ -1355,7 +1160,7 @@ bb({body:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 3;
 ```
 
-b: AHHHH WE'RE GONNA DIE AAAAAAHHHHHHH
+b: AHHHH WE'RE GONNA BECOME A FAILURE AAAAAAHHHHHHH
 
 ```
 hong({body:"3_defeated1"});
@@ -1373,7 +1178,7 @@ bb({body:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 3;
 ```
 
-b: AHHHH EVERYONE HATES US AAAAAAHHHHHHH
+b: AHHHH WE'RE GONNA FAIL JEE AAAAAAHHHHHHH
 
 ```
 hong({body:"3_defeated1"});
@@ -1391,7 +1196,7 @@ bb({body:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 3;
 ```
 
-b: AHHHH WE'RE HORRIBLE PEOPLE AAAAAAHHHHHHH
+b: AHHHH WE'RE HORRIBLE AND WORTHLESS TO OUR PARENTS AAAAAAHHHHHHH
 
 ```
 hong({body:"3_defeated1"});
@@ -1413,7 +1218,7 @@ n: CONGRATULATIONS
 
 (...500)
 
-n: YOU'VE SUCCESSFULLY PROTECTED YOUR HUMAN'S PHYSICAL + SOCIAL + MORAL NEEDS
+n: YOU'VE SUCCESSFULLY PROTECTED THE KID'S PHYSICAL + SOCIAL + MORAL NEEDS
 
 n: WHY, LOOK HOW GRATEFUL THEY ARE!
 
@@ -1441,7 +1246,7 @@ b: Your phone was giving you a panic attack!
 
 `bb({eyes:"anger"})`
 
-b: Zuckerberg and Co are hijacking your mental health for venture capitalist money!
+b: Zuckerberg and Co are hijacking your mental health for venture capitalist money, and trying!
 
 ```
 bb({body:"fear", eyes:"fear"});
