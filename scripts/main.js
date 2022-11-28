@@ -5,9 +5,6 @@ Loader.addScenes([
 	"scenes/intro.md",
 	"scenes/act1.md",
 	"scenes/intermission.md",
-	"scenes/act2.md",
-	"scenes/act3.md",
-	"scenes/act4.md",
 	"scenes/credits.md"
 	
 ]);

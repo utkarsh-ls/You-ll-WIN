@@ -29,17 +29,6 @@ window.attackBB = function(damage, type){
 // Init
 Game.init = function(){
 
-	// Create the section debug menu
-	Object.keys(Game.sections).forEach(function(key){
-		const link = document.createElement('div');
-		link.className = "section_link";
-		link.innerText = key;
-		link.addEventListener('click', function() {
-			Game.goto(key);
-		});
-		document.getElementById("section_debug_list").appendChild(link);
-	})
-
 	// HP!
 	window.HP = new HitPoints();
 

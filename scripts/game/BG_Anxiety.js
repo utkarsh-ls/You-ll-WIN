@@ -29,11 +29,11 @@ function BG_Anxiety(whiteMode){
 
 		// Move horizontal-only or vertical-only
 		if(Math.random()<0.5){
-			box.velX = (Math.random()>0.5 ? -1 : 1) * (Math.random()*0.8+0.2);
+			// box.velX = (Math.random()>0.5 ? -1 : 1) * (Math.random()*0.8+0.2);
 			box.velY = 0;
 		}else{
 			box.velX = 0;
-			box.velY = (Math.random()>0.5 ? -1 : 1) * (Math.random()*0.8+0.2);
+			// box.velY = (Math.random()>0.5 ? -1 : 1) * (Math.random()*0.8+0.2);
 		}
 
 		// If NOT start in view, use Velocity to determine where to put box
