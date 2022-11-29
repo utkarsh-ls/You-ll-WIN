@@ -11,36 +11,22 @@ Loader.load = function(progressCallback){
 		assetsLoaded++;
 		progressCallback(assetsLoaded/totalAssets);
 	});
-
-	// Gotta LOAD 'EM ALL
 	return new RSVP.Promise(function(resolve){
 		
 		var loadPromises = [];
-
-		// All scenes
 		Loader.sceneSources.forEach(function(src){
 			loadPromises.push( Loader.loadScene(src) );
 		});
-		
-		// All images
 		Loader.imageConfigs.forEach(function(config){
 			loadPromises.push( Loader.loadImage(config) );
 		});
-		
-		// All sounds
 		Loader.soundConfigs.forEach(function(config){
 			loadPromises.push( Loader.loadSound(config) );
 		});
-
-		// Go go go!
 		RSVP.all(loadPromises).then(resolve);
 
 	});
 };
-
-/////////////////////////////
-// IMAGES ///////////////////
-/////////////////////////////
 
 Loader.imageConfigs = [];
 Loader.addImages = function(imageConfigs){
@@ -61,10 +47,6 @@ Loader.loadImage = function(imageConfig){
 	});
 };
 
-/////////////////////////////
-// SCENES ///////////////////
-/////////////////////////////
-
 Loader.sceneSources = [];
 Loader.addScenes = function(sceneSources){
 	Loader.sceneSources = Loader.sceneSources.concat(sceneSources);
@@ -75,7 +57,6 @@ Loader.loadScene = function(src){
 		xhr.open("GET", src);
 		xhr.onload = function() {
 		    if(xhr.status===200){
-		    	Game.parseSceneMarkdown(xhr.responseText); // PARSE INTO GAME
 		    	publish("assetLoaded");
 		    	resolve();
 		    }
@@ -83,10 +64,6 @@ Loader.loadScene = function(src){
 		xhr.send();
 	});
 };
-
-/////////////////////////////
-// SOUNDS ///////////////////
-/////////////////////////////
 
 Loader.soundConfigs = [];
 Loader.addSounds = function(soundConfigs){
@@ -97,8 +74,7 @@ Loader.loadSound = function(soundConfig){
 		var sound = new Howl({
 			src: [soundConfig.src]
 		});
-		var id = soundConfig.id;
-		Library.sounds[id] = sound; // ADD TO LIBRARY
+	var id = soundConfig.id;
 		sound.once("load",function(){
 			publish("assetLoaded");
 			resolve();
